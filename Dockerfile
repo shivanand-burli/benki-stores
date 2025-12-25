@@ -1,7 +1,7 @@
 # ================================
 # Build stage
 # ================================
-FROM golang:1.22-alpine AS builder
+FROM golang:1.25.5-alpine3.23 AS builder
 
 WORKDIR /app
 
@@ -38,3 +38,4 @@ EXPOSE 2027
 
 # Run
 CMD ["/app/app"]
+
